@@ -1,0 +1,66 @@
+* { margin: 0; padding: 0; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+input[type=range] {
+    margin: 10px 0 10px 0;
+}
+
+button {
+    width: 50%;
+    height: 30px; 
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+h2 {
+    color: white; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 150%;
+}
+
+
+#map {
+    flex-grow: 1;
+    height: 100%;
+}
+
+#opacitySlider {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+
+}
+
+.config-panel {
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    background: #23538a; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #23538a 6%, #6181d8 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #23538a 6%,#6181d8 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #23538a 6%,#6181d8 99%);
+}
+
+.marker {
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.coordinates {
+    padding-left: 10px;
+}
+
+

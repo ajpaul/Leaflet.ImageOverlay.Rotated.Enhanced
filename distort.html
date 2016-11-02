@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Overlay Sandbox</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.css" />
+    <link rel="stylesheet" href="./distort.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.js"></script>
+	<script src="./Leaflet.ImageOverlay.Rotated.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>    
+</head>
+<body>
+
+    <div class="container">
+
+        <aside class="config-panel">
+            
+            <h2>Georectify</h2>
+
+            <div class="marker">
+                Overlay opacity: <span id="opacity">0.5</span>
+                <input id="opacitySlider" type="range" min="0" max="1" step=".01" value="0.5"/>
+            </div>
+
+
+            <section class="marker">
+                Marker 1:
+
+                <div class="coordinates">
+                    <div>Lat: <span id="marker1Lat"></span></div>
+
+                    <div>Long: <span id="marker1Long"></span></div>
+                </div>
+            </section>
+
+            <section class="marker">
+                Marker 2:
+
+                <div class="coordinates">
+                    <div>Lat: <span id="marker2Lat"></span></div>
+
+                    <div>Long: <span id="marker2Long"></span></div>
+                </div>
+            </section>
+
+            <section class="marker">
+                Marker 3:
+
+                <div class="coordinates">
+                    <div>Lat: <span id="marker3Lat"></span></div>
+
+                    <div>Long: <span id="marker3Long"></span></div>
+                </div>
+            </section>
+            
+            <button id="export">Export JSON</button>
+        </aside>
+
+        <div id="map"></div>
+
+    </div>    
+    
+
+<script src="./distort.js"></script>
+</body>
+</html>
